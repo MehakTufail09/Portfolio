@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sacramento&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="icon" href="images/arab.png" type="image/x-icon" />
+		<link rel="stylesheet" href="stylesheet.css" />
+	
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		``
+
+		<title>Portfolio</title>
+	</head>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: false,
+		});
+	</script>
+
+	<body>
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<header>
+					<nav class="navbar">
+						<h1 class="logo logo-center">Mehak</h1>
+						<div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+							☰
+						</div>
+
+						<ul class="nav-links" id="navLinks">
+							<li><a href="#about">About</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<main>
+					<section id="home" class="section home-section">
+						<div>
+							<img
+								src="images/Avatar-removebg-preview.png"
+								alt="Anime Avatar"
+								class="avatar"
+							/>
+						</div>
+						<div class="intro-text">
+							<h2 id="typewriter"></h2>
+							<p>Frontend Developer | Anime Enthusiast | UI/UX Designer |</p>
+						</div>
+					</section>
+					<section id="about" class="section about-section" data-aos="fade-up">
+						<div>
+							<h2 class="abt">About Me</h2>
+							<p>
+								Hi! I'm <strong>Mehak Tufail</strong>, a passionate
+								<strong>Frontend Developer</strong> who loves creating
+								beautiful, interactive, and user-friendly web experiences. I
+								recently graduated with a degree in Software Engineering and am
+								deeply inspired by the aesthetics of anime and minimalist
+								design.
+							</p>
+							<p>
+								My specialties include
+								<span class="highlight"
+									>HTML, CSS, JavaScript, React, and Figma</span
+								>. I enjoy bringing ideas to life through clean code and
+								creative UI/UX. When I'm not coding, you'll find me watching
+								anime, sketching UI ideas, or learning something new!
+							</p>
+							<a
+								href="Mehak-Resume.pdf.pdf"
+								class="download-btn"
+								target="_blank"
+								>My Resume</a
+							>
+						</div>
+						<div>
+							<video
+								src="images/f75236591cf0e92a84d7b5601a70f83c.mp4"
+								class="potion"
+								autoplay
+								loop
+								muted
+							></video>
+						</div>
+					</section>
+					<section class="Services">
+						<div class="services-section" id="services" data-aos="fade-up">
+							<h1 class="s-heading">Services</h1>
+							<div class="service-cards">
+								<div class="service-card">
+									<h3>Web Development</h3>
+									<p>
+										I create responsive and interactive websites using the
+										latest web technologies.
+									</p>
+								</div>
+								<div class="service-card">
+									<h3>UI/UX Design</h3>
+									<p>
+										I design user-friendly interfaces that enhance user
+										experience and engagement.
+									</p>
+								</div>
+								<div class="service-card">
+									<h3>Anime Art</h3>
+									<p>
+										I love creating anime-inspired art and illustrations for
+										various projects.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- Projects Section -->
+					<section class="projects" id="projects">
+						<h1 class="p-heading">My Projects</h1>
+						<div class="project-gallery">
+							<a
+								href="https://delightful-bite.vercel.app/"
+								class="project-card"
+								data-aos="zoom-in"
+							>
+								<img src="images/cake.png" alt="Project 1" />
+								<div class="card-content">
+									<h3>Cake Website</h3>
+									<p>
+										Clean, responsive Cake Website build with HTML, Css and JS.
+									</p>
+								</div>
+							</a>
+
+							<a
+								href="https://madeasy.vercel.ap"
+								class="project-card"
+								data-aos="zoom-in"
+							>
+								<img src="images/madeeasy.png" alt="Project 2" />
+								<div class="card-content">
+									<h3>MadeEasy Website</h3>
+									<p>
+										Website for students to generate flashcards to learn any
+										topic in a better way.
+									</p>
+								</div>
+							</a>
+
+							<a
+								href="https://chatting-genie-mvp.vercel.app/"
+								class="project-card"
+								data-aos="zoom-in"
+							>
+								<img src="images/chatgenie.png" alt="Project 1" />
+								<div class="card-content">
+									<h3>Chat Genie</h3>
+									<p>Built with Nextjs and firebase. Clean and responsive.</p>
+								</div>
+							</a>
+							<a
+								href="https://portfolio-three-pink-43.vercel.app/"
+								class="project-card"
+								data-aos="zoom-in"
+							>
+								<img src="images/port.png" alt="Project 1" />
+								<div class="card-content">
+									<h3>Old Portfolio</h3>
+									<p>Clean, responsive personal site with animations.</p>
+								</div>
+							</a>
+						</div>
+					</section>
+					<section class="h-scroll">
+						<div class="scrolling-text" id="scrollMarquee">
+							<span
+								>🌸 Mehak Tufail ✦ Frontend Developer ✦ UI/UX Designer ✦ Anime
+								Lover ✦</span
+							>
+							<span
+								>🌸 Mehak Tufail ✦ Frontend Developer ✦ UI/UX Designer ✦ Anime
+								Lover ✦</span
+							>
+						</div>
+					</section>
+
+					<!-- Contact Section -->
+					<section id="contact" class="contact-section" data-aos="fade-up">
+						<h1 class="h1-contact">Let's Work Together</h1>
+						<div class="content">
+							<h2 class="con-head">Send Me a Message</h2>
+							<form
+								action="mailto:mehaktufail09@gmail.com"
+								method="POST"
+								enctype="text/plain"
+							>
+								<input
+									class="input-text"
+									placeholder="Your Name"
+									type="text"
+									name="name"
+									required
+								/>
+								<input
+									class="input-text"
+									placeholder="Your Email"
+									type="email"
+									name="email"
+									required
+								/>
+								<textarea
+									class="input-text"
+									placeholder="Your Message"
+									name="message"
+									required
+								></textarea>
+								<button class="submit-btn" type="submit">📨 Send</button>
+							</form>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+
+		<footer>
+			<p class="footer-text">© 2025 Mehak Tufail | Made with 💜</p>
+		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({ duration: 1000, once: true });
+		</script>
+		<script>
+			// Typewriter effect
+			const text = "Hi, I'm Mehak 👩‍💻";
+			let index = 0;
+			function typeWriter() {
+				if (index < text.length) {
+					document.getElementById("typewriter").innerHTML += text.charAt(index);
+					index++;
+					setTimeout(typeWriter, 100);
+				}
+			}
+			window.onload = typeWriter;
+			function toggleMenu() {
+				const nav = document.getElementById("navLinks");
+				const toggleIcon = document.getElementById("menuToggle");
+				nav.classList.toggle("active");
+				// Change icon based on state
+				if (nav.classList.contains("active")) {
+					toggleIcon.textContent = "✕"; // Close icon
+				} else {
+					toggleIcon.textContent = "☰"; // Hamburger icon
+				}
+			}
+			document.querySelectorAll(".nav-links a").forEach((link) => {
+				link.addEventListener("click", () => {
+					const nav = document.getElementById("navLinks");
+					const toggleIcon = document.getElementById("menuToggle");
+					if (nav.classList.contains("active")) {
+						nav.classList.remove("active");
+						toggleIcon.textContent = "☰";
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
