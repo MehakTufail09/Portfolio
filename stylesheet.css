@@ -24,6 +24,8 @@ body {
 	overflow-x: hidden;
 	box-sizing: border-box;
 	margin: 0;
+	right: 0;
+	top: 0;
 }
 .logo {
 	font-size: 1.8rem;
@@ -53,11 +55,12 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2px 30px;
-	margin: 3rem 20rem;
+	padding: 1px 2rem;
+	margin: 2rem 20rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);
 	border-radius: 50px;
+	max-width: 1200px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 .nav-links {
@@ -150,6 +153,8 @@ body {
 .intro-text {
 	font-family: square;
 	font-size: 2rem;
+	overflow: hidden;
+	flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	color: rgb(246, 243, 245);
@@ -163,33 +168,44 @@ body {
 		text-align: center;
 		align-items: center;
 	}
-	.intro-text {
-		font-size: 0.8rem;
+	#typewriter {
+		font-size: 1.8rem;
+		color: #ff7bc8;
+	}
+	.intro-text p {
+		font-size: 1rem;
 		text-align: center;
-		margin: 0 30px;
+		flex-wrap: wrap;
+		margin-bottom: 3rem;
 		font-weight: normal;
+		color: rgb(84, 13, 66);
+		backdrop-filter: blur(8px);
 		padding: 0 20px;
+		font-family: monospace;
+		font-weight: 600;
 	}
 	.avatar {
-		width: 150px;
-		height: 150px;
+		width: 300px;
+		height: 300px;
 		margin: 0 auto;
 		align-items: center;
 		text-align: center;
 		justify-content: center;
+		box-shadow: 0 15px 25px -15px rgba(78, 4, 50, 0.35);
+		backdrop-filter: blur(10px);
 	}
 }
 .about-section {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
-	padding: 4rem;
-	height: 100vh;
-
 	justify-content: center;
-	gap: 10rem;
-	width: 100%;
-	/* max-width: 1000px; */
+
+	padding: 4rem;
+	gap: 15rem;
+	margin: auto;
+	min-height: 100vh;
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(8px);
 }
@@ -205,6 +221,7 @@ body {
 	font-size: 1.5rem;
 	color: hsl(25, 66%, 89%);
 	text-align: left;
+	text-align: justify;
 	max-width: 800px;
 	gap: 10px;
 	line-height: 1.5;
@@ -231,9 +248,8 @@ body {
 }
 
 .potion {
-	/* 
-    display: flex;
-    flex-direction: row; */
+	display: flex;
+	justify-content: center;
 	height: 80vh;
 	width: 100%;
 	border-radius: 50px;
@@ -256,6 +272,7 @@ body {
 	.about-section p {
 		font-size: 1rem;
 		text-align: center;
+		text-align: justify;
 		margin: 2rem;
 	}
 	.download-btn {
@@ -272,11 +289,11 @@ body {
 }
 
 .projects {
-	padding: 4rem 2rem;
+	padding: 4rem1rem;
 	background: linear-gradient(to right, #cfa2f7, #fce1f2);
 	text-align: center;
 	justify-content: center;
-	width: 100%;
+	overflow: hidden;
 	max-width: 1400px;
 	border-radius: 20px;
 	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
