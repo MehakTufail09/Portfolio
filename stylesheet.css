@@ -27,6 +27,7 @@ body {
 	color: rgb(245, 223, 207);
 	overflow-x: hidden;
 	box-sizing: border-box;
+	
 }
 
 .logo {
@@ -751,7 +752,6 @@ textarea.input-text {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	
 }
 .social-links {
 	display: flex;
