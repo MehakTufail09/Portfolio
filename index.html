@@ -10,9 +10,11 @@
 
 		<link rel="icon" href="images/arab.png" type="image/x-icon" />
 		<link rel="stylesheet" href="stylesheet.css" />
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		
 
 		<title>Portfolio</title>
 	</head>
@@ -131,7 +133,7 @@
 								class="project-card"
 								data-aos="zoom-in"
 							>
-								<img src="images/cake.png" alt="Project 1" />
+								<img src="images/cake.png" alt="Cake Website" />
 								<div class="card-content">
 									<h3>Cake Website</h3>
 									<p>
@@ -145,7 +147,7 @@
 								class="project-card"
 								data-aos="zoom-in"
 							>
-								<img src="images/madeeasy.png" alt="Project 2" />
+								<img src="images/madeeasy.png" alt="MadeEasy site" />
 								<div class="card-content">
 									<h3>MadeEasy Website</h3>
 									<p>
@@ -160,10 +162,13 @@
 								class="project-card"
 								data-aos="zoom-in"
 							>
-								<img src="images/chatgenie.png" alt="Project 1" />
+								<img src="images/chatgenie.png" alt="ChatGenie site" />
 								<div class="card-content">
 									<h3>Chat Genie</h3>
-									<p>Built with Nextjs and firebase. Clean and responsive.</p>
+									<p>
+										Built with Nextjs and firebase. Clean and responsive
+										chatbot.
+									</p>
 								</div>
 							</a>
 							<a
@@ -171,7 +176,7 @@
 								class="project-card"
 								data-aos="zoom-in"
 							>
-								<img src="images/port.png" alt="Project 1" />
+								<img src="images/port.png" alt="Old Portfolio" />
 								<div class="card-content">
 									<h3>Old Portfolio</h3>
 									<p>Clean, responsive personal site with animations.</p>
@@ -196,7 +201,7 @@
 					<section id="contact" class="contact-section" data-aos="fade-up">
 						<h1 class="h1-contact">Let's Work Together</h1>
 						<div class="content">
-							<h2 class="con-head">Send Me a Message</h2>
+							<h2 class="con-head">Drop a Message</h2>
 							<form
 								action="mailto:mehaktufail09@gmail.com"
 								method="POST"
@@ -231,6 +236,28 @@
 		</div>
 
 		<footer>
+			<div class="footer-content">
+				<div>
+					<span class="footer-text">Connect with me on</span>
+				</div>
+				<div class="social-links">
+					<a
+						href="https://www.linkedin.com/in/mehak-tufail-099177260/"
+						target="_blank"
+						><i class="fa fa-linkedin"></i
+					></a>
+					<a href="https://github.com/MehakTufail09" target="_blank"
+						><i class="fa fa-github"></i
+					></a>
+					<a href="https://www.instagram.com/mehak.devv/" target="_blank"
+						><i class="fa fa-instagram"> </i
+					></a>
+
+					<a href="mailto:mehaktufail09@gmail.com" target="_blank">
+						<i class="fa fa-envelope"></i>
+					</a>
+				</div>
+			</div>
 			<p class="footer-text">© 2025 Mehak Tufail | Made with 💜</p>
 		</footer>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -253,11 +280,11 @@
 				const nav = document.getElementById("navLinks");
 				const toggleIcon = document.getElementById("menuToggle");
 				nav.classList.toggle("active");
-				// Change icon based on state
+
 				if (nav.classList.contains("active")) {
-					toggleIcon.textContent = "✕"; // Close icon
+					toggleIcon.textContent = "✕";
 				} else {
-					toggleIcon.textContent = "☰"; // Hamburger icon
+					toggleIcon.textContent = "☰";
 				}
 			}
 			document.querySelectorAll(".nav-links a").forEach((link) => {
