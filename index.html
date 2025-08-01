@@ -47,7 +47,12 @@
 				</header>
 
 				<main>
-					<section id="home" class="section home-section">
+					<section
+						id="home"
+						class="section home-section"
+						data-aos="fade-in"
+						data-aos-delay="100"
+					>
 						<div>
 							<img
 								src="images/Avatar-removebg-preview.png"
@@ -125,7 +130,7 @@
 						</div>
 					</section>
 					<!-- Projects Section -->
-					<section class="projects" id="projects">
+					<section class="projects" id="projects" data-aos="fade-up">
 						<h1 class="p-heading">My Projects</h1>
 						<div class="project-gallery">
 							<a
@@ -184,7 +189,7 @@
 							</a>
 						</div>
 					</section>
-					<section class="h-scroll">
+					<section class="h-scroll" data-aos="fade-in">
 						<div class="scrolling-text" id="scrollMarquee">
 							<span
 								>🌸 Mehak Tufail ✦ Frontend Developer ✦ UI/UX Designer ✦ Anime
@@ -198,7 +203,12 @@
 					</section>
 
 					<!-- Contact Section -->
-					<section id="contact" class="contact-section" data-aos="fade-up">
+					<section
+						id="contact"
+						class="contact-section"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
 						<h1 class="h1-contact">Let's Work Together</h1>
 						<div class="content">
 							<h2 class="con-head">Drop a Message</h2>
@@ -240,7 +250,7 @@
 				<div>
 					<span class="footer-text">Connect with me on</span>
 				</div>
-				<div class="social-links">
+				<div class="social-links" data-aos="fade-up" data-aos-delay="100">
 					<a
 						href="https://www.linkedin.com/in/mehak-tufail-099177260/"
 						target="_blank"
@@ -262,7 +272,17 @@
 		</footer>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
-			AOS.init({ duration: 1000, once: false });
+			window.addEventListener("load", () => {
+				AOS.refresh();
+			});
+		</script>
+		<script>
+			AOS.init({
+				duration: 800,
+				once: true,
+				offset: 120,
+				anchorPlacement: "top-bottom",
+			});
 		</script>
 		<script>
 			// Typewriter effect
